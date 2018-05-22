@@ -12,10 +12,6 @@
         <flyway.version>5.0.7</flyway.version>
         <mysql.driver.version>5.1.6</mysql.driver.version>
         <lombok.version>1.16.8</lombok.version>
-        <database.driver>com.mysql.jdbc.Driver</database.driver>
-        <database.url>jdbc:mysql://localhost:3306/?autoreconnect=true</database.url>
-        <database.username>root</database.username>
-        <database.password>cutting2013</database.password>
     </properties>
 
     <dependencies>
