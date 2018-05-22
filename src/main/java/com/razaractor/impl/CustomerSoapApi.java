@@ -3,6 +3,7 @@ package com.razaractor.impl;
 import com.razaractor.CustomerService;
 import com.razaractor.entity.Customer;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -14,7 +15,7 @@ import javax.jws.soap.SOAPBinding;
  * @author nakampe
  */
 @WebService(targetNamespace = "api.razaractor.com")
-//@SOAPBinding(style = SOAPBinding.Style.DOCUMENT)
+@Stateless
 public class CustomerSoapApi {
 
     @Inject
