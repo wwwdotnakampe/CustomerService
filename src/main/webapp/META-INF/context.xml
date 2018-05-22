@@ -11,16 +11,4 @@
     on session expiration as well as webapp lifecycle) -->
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     
-    <!-- url: The JDBC connection url for connecting to your MySQL database.
-    -->
-    <!--https://tomcat.apache.org/tomcat-7.0-doc/jndi-datasource-examples-howto.html-->
-<!--      <Resource id="customerApp" auth="Container" type="javax.sql.DataSource"
-    maxActive="100" maxIdle="30" maxWait="10000" 
-    username="root" password="123456" driverClassName="com.mysql.jdbc.Driver"
-    url="jdbc:mysql://localhost:3306/customer"/>-->
-    <!-- see http://tomee.apache.org/containers-and-resources.html -->
-
-    <!-- activate next line to be able to deploy applications in apps -->
-    <!-- <Deployments dir="apps" /> -->
-
 </Context>
