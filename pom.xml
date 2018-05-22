@@ -79,6 +79,26 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>startTomee</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>
+                                start-server
+                            </goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>stopTomee</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>
+                                stop-server
+                            </goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
