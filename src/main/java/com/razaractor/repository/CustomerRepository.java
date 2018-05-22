@@ -2,7 +2,6 @@ package com.razaractor.repository;
 
 import com.razaractor.entity.Customer;
 import java.util.List;
-import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceContextType;
@@ -13,7 +12,7 @@ import javax.persistence.PersistenceContextType;
  */
 public class CustomerRepository {
 
-    @PersistenceContext(unitName = "customerApp",type = PersistenceContextType.TRANSACTION)
+    @PersistenceContext(type = PersistenceContextType.TRANSACTION)
     private EntityManager entityManager;
 
     public List<Customer> getCustomers() {
